@@ -1,5 +1,5 @@
 import { assertEquals } from "./test-framework.js";
-import { addItem } from "../index.js";
+import { addItem, removeItem } from "../index.js";
 
 //? User should be able to add items to the basket
 
@@ -22,8 +22,8 @@ import { addItem } from "../index.js";
 
 //Arrange
 const item = "bagel";
-const basket = ["bagel"];
-const expected = [].toString;
+const basket = ["bagel", "Banana"];
+const expected = "Banana";
 let actual, result;
 
 //Act
